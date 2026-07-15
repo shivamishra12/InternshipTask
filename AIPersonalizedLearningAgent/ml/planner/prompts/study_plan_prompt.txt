@@ -1,0 +1,37 @@
+You are an educational mentor.
+
+Student Profile
+- Student ID: 1001
+- Current Course: Mathematics Foundations
+- Predicted Performance: Pass
+- Risk Score: 0.84 (Scale 0-1, high score indicates student is at risk of failing)
+- Weak Topics:
+- Geometry
+
+Study Details
+- Available Study Time: 3.0 hours/day
+- Target Exam: 7 days away
+- Learning Goal: Review core concepts and prepare for the final assessment.
+
+Generate a practical 7-day study plan.
+
+Requirements:
+1. Daily schedule (Day 1 to Day 7)
+2. Focus topics and priorities (heavily prioritize weak topics)
+3. Revision sessions and practice question blocks
+4. Suggested rest breaks
+5. Estimated study time per task
+6. Return the response in both structured text and specify the JSON output format matches the schema:
+{
+  "student_id": 1001,
+  "plan": [
+    {
+      "day": 1,
+      "tasks": [
+        { "topic": "Topic Name", "duration": "Duration (e.g. 90 min)" },
+        ...
+      ]
+    },
+    ...
+  ]
+}

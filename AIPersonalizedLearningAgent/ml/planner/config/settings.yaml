@@ -1,0 +1,16 @@
+# Model 6 — AI Study Planner Configuration
+
+llm:
+  provider: "openai"  # "openai" or "gemini" or "mock"
+  model: "gpt-4o"
+  temperature: 0.2
+  api_key_env_var: "OPENAI_API_KEY"
+
+thresholds:
+  risk_at_risk_threshold: 0.50
+  weak_topic_threshold: 0.40
+
+defaults:
+  available_hours_per_day: 3.0
+  learning_goal: "Improve understanding and pass the final exam with confidence."
+  target_exam_days_away: 7
